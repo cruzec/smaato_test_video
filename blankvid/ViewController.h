@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iSoma/iSoma.h>
 
-@interface ViewController : UIViewController
-
-
+@interface SMTVastAdViewController : UIViewController
+@property(nonatomic, weak) IBOutlet UIButton* loadAdButton;
+@property(nonatomic, weak) IBOutlet UIButton* showFullScreenButton;
+@property(nonatomic, strong) SOMAInterstitialVideoAdView* adView;
 @end
-

@@ -15,6 +15,7 @@
 		0F018CD71FE2151E004B6B21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F018CD61FE2151E004B6B21 /* main.m */; };
 		0F018CE11FE2151E004B6B21 /* blankvidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F018CE01FE2151E004B6B21 /* blankvidTests.m */; };
 		0F018CEC1FE2151E004B6B21 /* blankvidUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F018CEB1FE2151E004B6B21 /* blankvidUITests.m */; };
+		0F018CFF1FE21749004B6B21 /* iSoma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F018CFE1FE21749004B6B21 /* iSoma.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0F018CE71FE2151E004B6B21 /* blankvidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blankvidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F018CEB1FE2151E004B6B21 /* blankvidUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blankvidUITests.m; sourceTree = "<group>"; };
 		0F018CED1FE2151E004B6B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F018CFE1FE21749004B6B21 /* iSoma.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iSoma.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F018CFF1FE21749004B6B21 /* iSoma.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 				0F018CDF1FE2151E004B6B21 /* blankvidTests */,
 				0F018CEA1FE2151E004B6B21 /* blankvidUITests */,
 				0F018CC51FE2151D004B6B21 /* Products */,
+				0F018CF91FE21578004B6B21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +134,14 @@
 				0F018CED1FE2151E004B6B21 /* Info.plist */,
 			);
 			path = blankvidUITests;
+			sourceTree = "<group>";
+		};
+		0F018CF91FE21578004B6B21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F018CFE1FE21749004B6B21 /* iSoma.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,8 +443,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 248X825F5Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = blankvid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ec.blankvid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -444,8 +462,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 248X825F5Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = blankvid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ec.blankvid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
